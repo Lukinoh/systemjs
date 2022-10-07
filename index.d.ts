@@ -62,6 +62,12 @@ declare const System: {
    * Use for (let entry of System.entries()) to access all of the modules in the SystemJS registry.
    */
   entries(): Iterable<[string, System.Module]>;
+
+
+  /**
+   * Allows adding an import map without using the DOM.
+   */
+  addImportMap(newMap, mapBase?: string): void
 };
 
 declare namespace System {
